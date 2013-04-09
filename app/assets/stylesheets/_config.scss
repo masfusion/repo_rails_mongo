@@ -1,0 +1,65 @@
+//
+// _config.scss
+//
+// This style was developed by Ricardo Moctezuma.
+// It reflects the styles for the front-end project.
+//
+// @project   C&A
+// @author    Ricardo Moctezuma
+// @copyright 2013
+//
+
+// Color vars
+$blue: #003B78;
+$dark_blue: #003468;
+$light_blue: #4686CD;
+$red: #B41019;
+$dark_red:#8F0C14;
+
+// Text vars
+$text_size: 12px;
+$text_line: 16px;
+$text_color: #000;
+
+// Buttons
+$top_red_btn: #FF404C;
+$bottom_red_btn: #F00013;
+
+// Forms
+$warning: #FFF7E5;
+$error: #F6D5D7;
+$success: #E0FFEB;
+
+// Border radius
+@mixin rounded($radius:2px) {
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	border-radius:$radius;
+}
+
+// Box shadow
+@mixin box_shadow($shadow_x:0px, $shadow_y:2px, $blur:2px, $shadow_color:#10243C) {
+	-webkit-box-shadow:$shadow_x $shadow_y $blur $shadow_color;
+	-moz-box-shadow:$shadow_x $shadow_y $blur $shadow_color;
+	box-shadow:$shadow_x $shadow_y $blur $shadow_color;
+}
+
+// Gradients
+@mixin linear_gradient($top_color:#F7B000, $bottom_color:#F49600) {
+	background:$top_color;
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from($top_color), to($bottom_color));
+	background:-webkit-linear-gradient($top_color, $bottom_color);
+	background:-moz-linear-gradient($top_color, $bottom_color);
+	background:-ms-linear-gradient($top_color, $bottom_color);
+	background:-o-linear-gradient($top_color, $bottom_color);
+	background:linear-gradient($top_color, $bottom_color);
+	-pie-background:linear-gradient($top_color, $bottom_color);
+}
+
+// Transitions
+@mixin transition($property, $transition...){
+  transition#{$property}: $transition;
+  -moz-transition#{$property}: $transition;
+  -webkit-transition#{$property}: $transition;
+  -o-transition#{$property}: $transition;
+}

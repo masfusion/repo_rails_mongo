@@ -1,0 +1,74 @@
+/**
+ * reset.css
+ *
+ * The function of this file is to "reset" all default styles in all browser's.
+ *
+ * @copyright 2012
+ * @media     screen
+*/ 
+
+/**
+ * -------------------------
+ * @section Generals
+ * @info    General reset tags.
+ * -------------------------
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+ins {background:#ff9; color:#000; text-decoration:none;}
+mark {background:#ff9; color:#000;  font-style:italic; font-weight:bold;}
+del {text-decoration: line-through;}
+hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;}
+img {vertical-align:bottom;}
+
+/**
+ * -------------------------
+ * @section HTML 5 Tags
+ * @info    Add support for HTML5 tags.
+ * -------------------------
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, address {display:block; font-style:normal}
+
+/**
+ * -------------------------
+ * @section Navigation lists
+ * @info    Default styles for navigation.
+ * -------------------------
+ */
+nav ul {list-style:none;}
+
+/**
+ * -------------------------
+ * @section Quotes
+ * @info    Default styles for quotes.
+ * -------------------------
+ */
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:''; content:none;}
+
+/**
+ * -------------------------
+ * @section Links
+ * @info    Default styles for links.
+ * -------------------------
+ */
+a {margin:0; padding:0; background:transparent;}
+
+/**
+ * -------------------------
+ * @section Forms.
+ * @info    Default styles for forms.
+ * -------------------------
+ */
+input, select {vertical-align:middle;}

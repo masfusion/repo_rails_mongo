@@ -1,0 +1,215 @@
+//= require reset
+
+/**
+ * application.scss
+ *
+ * This style was developed by Ricardo Moctezuma.
+ * It reflects the styles for the front-end project.
+ *
+ * @project   Youfut
+ * @authors   Ricardo Moctezuma
+ * @copyright 2013
+ * @media     screen
+*/
+
+// Import Sass global settings.
+@import "_config";
+
+/**
+ * -------------------------
+ * @info  Get Google Web Fonts.
+ * @see   Google Web Fonts
+ * http://www.google.com/webfonts/
+ * -------------------------
+*/
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+
+/**
+ * -------------------------
+ * @info  Set Google Web Fonts.
+ * -------------------------
+*/
+.open_s {font-family:"Open Sans", Arial, Helvetica, sans-serif;}
+
+/**
+ * -------------------------
+ * @section Generals
+ * @info    This properties are for entire front-end and we could use whenever.
+ * -------------------------
+*/
+// Generals
+* {margin: 0; outline: none}
+body {font-family: Arial, Helvetica, sans-serif; font-size: 62.5%; min-width: 720px; background: #333;}
+.remove_clear_type_ie {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=99);}
+
+// Forms
+input:focus, textarea, select {outline: none; resize: none}
+.input_hide_submit {position: absolute; left: -9999em; top: -9999em;}
+
+// Box model
+.show {display: block !important;}
+.hide {display: none !important;}
+.in_block {display: inline-block; zoom: 1; *display: inline;}
+.middle {vertical-align: middle;}
+.vmiddle {visibility: visible;}
+
+// Position
+.ps_left {left: 0;}
+.ps_right {right: 0;}
+
+// Border
+.no_border {border: none !important;}
+.no_border_top {border-top: none !important;}
+.no_border_left {border-left: none !important;}
+.no_border_right {border-right: none !important;}
+.no_border_bottom {border-bottom: none !important;}
+
+// Margin
+.no_margin {margin: 0px !important;}
+.no_margin_right {margin-right: 0px !important;}
+.no_margin_left {margin-left: 0px !important;}
+.no_margin_bottom {margin-bottom: 0px !important;}
+.no_margin_top {margin-top: 0px !important;}
+
+// Padding
+.no_padding {padding: 0px !important;}
+.no_padding_top {padding-top: 0px !important;}
+.no_padding_left {padding-left: 0px !important;}
+.no_padding_right {padding-right: 0px !important;}
+.no_padding_bottom {padding-bottom: 0px !important;}
+
+// Images
+.no_bg {background: none !important;}
+img {-ms-interpolation-mode: bicubic; border: none;}
+
+// Content
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+p {margin: 0px; padding: 0px}
+ul, ol {margin: 0; padding: 0; list-style-type: none;}
+a {outline: none;}
+a span, a em, a span, a b {cursor: pointer; font-style: normal}
+a[href^=tel] {text-decoration: none}
+.center {text-align: center;}
+.right {text-align: right;}
+
+/**
+ * -------------------------
+ * @info    masFusion grid rules.
+ * -------------------------
+*/
+.fl_left {float: left;}
+.fl_right {float: right;}
+.no_float {float: none !important;}
+.ow_hidden {overflow: hidden;}
+.clear_fix {zoom: 1/* IE6 / IE7 */}
+.clear_fix:after {content: ""; height: 0; clear: both; display: block;}
+.clear {clear: both;}
+.box_960 {width: 960px; margin: 0 auto}
+
+/**
+ * -------------------------
+ * @info    Support some CSS3 properties for IE6+.
+ * @see     CSS3 Pie
+ *          http://css3pie.com/
+ * -------------------------
+*/
+.css3 {behavior: url("/stylesheets/pie.htc"); position: relative;}
+
+/**
+ * -------------------------
+ * @section Buttons
+ * @info    Default styles for buttons.
+ * -------------------------
+*/
+
+/**
+ * -------------------------
+ * @section Link
+ * @info    Default styles for links.
+ * -------------------------
+*/
+
+/**
+ * -------------------------
+ * @section Forms
+ * @info  Default styles for forms.
+ * -------------------------
+*/
+form {
+  .input_text {-webkit-appearance: none; border: 1px solid #CCC; background: #FFF; font-family:Arial, Helvetica, sans-serif; font-size: 12px; color: #333}
+  .textarea {-webkit-appearance: none; border: 1px solid #CCC; font-family:Arial, Helvetica, sans-serif; font-size: 12px; color: #333; overflow: auto}
+  .error {
+    .input_text, .textarea, label {color: $red !important; background: $error;}
+    .dropdown_wrapper {
+      .dropdown_link {background: #D3121E !important;}
+      .dropdown_content {background: #D3121E !important;}
+    }
+  }
+}
+
+/**
+ * -------------------------
+ * @section Checkbox / Radio
+ * @info  Default styles for checkbox and input radio.
+ * -------------------------
+*/
+.has-js .label_check, .has-js .label_radio {padding-left: 30px;}
+.has-js .label_radio {background: url("bg/bg_checkbox_off.png") no-repeat;}
+.has-js .label_check {background: url("bg/bg_checkbox_off.png") no-repeat;}
+.has-js label.c_on {background: url("bg/bg_checkbox_on.png") no-repeat;}
+.has-js label.r_on {background: url("bg/bg_checkbox_on.png") no-repeat;}
+.has-js .label_check input, .has-js .label_radio input  {position: absolute; left: -9999px;}
+
+/**
+ * -------------------------
+ * @section Form message
+ * @info  Default styles for forms messages.
+ * -------------------------
+*/
+
+/**
+ * -------------------------
+ * @section General wrapper
+ * -------------------------
+*/
+#general_wrapper {}
+
+/**
+ * -------------------------
+ * @section Header
+ * -------------------------
+*/
+#header {}
+
+/**
+ * -------------------------
+ * @section Menu
+ * -------------------------
+*/
+.menu {}
+
+/**
+ * -------------------------
+ * @section Content
+ * -------------------------
+*/
+.content {background: #FFF;}
+
+/**
+ * -------------------------
+ * @section Dropdown
+ * -------------------------
+*/
+.dropdown_wrapper {
+  position:relative;
+  .dropdown_content {
+    position:absolute; display:none; z-index:200;
+  }
+}
+
+/**
+ * -------------------------
+ * @section Footer
+ * -------------------------
+*/
+#footer {}

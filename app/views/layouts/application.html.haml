@@ -1,0 +1,39 @@
+!!!
+%html
+  %head
+    %title Youfut
+    %meta{"http-equiv"=>"Content-Type", :content => "text/html; charset=utf-8"}
+    %meta{:name => "format-detection", :content => "telephone=no"}
+
+    = csrf_meta_tags
+
+    / IE HTML5
+    /[if IE]
+      = javascript_include_tag "html5"
+
+    / CSS
+    = stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag params[:controller], :media => "all"
+    = favicon_link_tag
+
+  %body
+
+    / General wrapper
+    #general_wrapper
+
+      / Header
+      = render :partial => "layouts/header"
+
+      / Content
+      .content
+
+        = yield()
+
+      / Footer
+      = render :partial => "layouts/footer"
+
+    / JS
+    = javascript_include_tag "application"
+    = javascript_include_tag params[:controller]
+    = render :partial => "layouts/analitycs"
+
